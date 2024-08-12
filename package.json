@@ -1,10 +1,10 @@
 {
 	"name": "misskey",
-	"version": "2024.8.0-alpha.0",
+	"version": "2024.8.0-alpha.0-neko",
 	"codename": "nasubi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/misskey-dev/misskey.git"
+		"url": "https://github.com/MIKU-N/misskey.git"
 	},
 	"packageManager": "pnpm@9.6.0",
 	"workspaces": [

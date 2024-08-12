@@ -22,7 +22,9 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<button v-if="thereIsTreasure" class="_button treasure" @click="getTreasure"><img src="/fluent-emoji/1f3c6.png" class="treasureImg"></button>
 				</div>
 				<div style="text-align: center;">
-					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://misskey-hub.net/docs/about-misskey/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
+					{{ i18n.ts._aboutMisskey.about }}<br>
+					此版本经过Nekovo的定制<br>
+					<a href="https://misskey-hub.net/docs/about-misskey/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
 				</div>
 				<div v-if="$i != null" style="text-align: center;">
 					<MkButton primary rounded inline @click="iLoveMisskey">I <Mfm text="$[jelly ❤]"/> #Misskey</MkButton>
@@ -102,16 +104,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<template #label>Special thanks</template>
 					<div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));grid-gap:24px;align-items:center;">
 						<div>
-							<a style="display: inline-block;" class="masknetwork" title="Mask Network" href="https://mask.io/" target="_blank"><img style="width: 100%;" src="https://assets.misskey-hub.net/sponsors/masknetwork.png" alt="Mask Network"></a>
-						</div>
-						<div>
-							<a style="display: inline-block;" class="xserver" title="XServer" href="https://www.xserver.ne.jp/" target="_blank"><img style="width: 100%;" src="https://assets.misskey-hub.net/sponsors/xserver.png" alt="XServer"></a>
-						</div>
-						<div>
-							<a style="display: inline-block;" class="skeb" title="Skeb" href="https://skeb.jp/" target="_blank"><img style="width: 100%;" src="https://assets.misskey-hub.net/sponsors/skeb.svg" alt="Skeb"></a>
-						</div>
-						<div>
-							<a style="display: inline-block;" class="pepabo" title="GMO Pepabo" href="https://pepabo.com/" target="_blank"><img style="width: 100%;" src="https://assets.misskey-hub.net/sponsors/gmo_pepabo.svg" alt="GMO Pepabo"></a>
+							<a style="display: inline-block;" class="cloudflare" title="Cloudflare" href="https://www.cloudflare.com/" target="_blank"><img width="180" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare"></a>
 						</div>
 					</div>
 				</FormSection>

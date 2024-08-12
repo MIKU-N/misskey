@@ -171,17 +171,17 @@
 				<path d="M12 9v2m0 4v.01"></path>
 				<path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
 			</svg>
-			<h1>Failed to load<br>読み込みに失敗しました</h1>
+			<h1>Failed to load<br>加载失败</h1>
 			<button class="button-big" onclick="location.reload(true);">
 				<span class="button-label-big">Reload / リロード</span>
 			</button>
-			<p><b>The following actions may solve the problem. / 以下を行うと解決する可能性があります。</b></p>
-			<p>Clear the browser cache / ブラウザのキャッシュをクリアする</p>
-			<p>Update your os and browser / ブラウザおよびOSを最新バージョンに更新する</p>
-			<p>Disable an adblocker / アドブロッカーを無効にする</p>
+			<p><b>The following actions may solve the problem. / 执行以下操作可能有所帮助。</b></p>
+			<p>Clear the browser cache / 清除浏览器缓存 </p>
+			<p>Update your os and browser / 更新你的系统或浏览器 </p>
+			<p>Disable an adblocker / 关闭广告拦截器（例如ADBlock/ADGruad） </p>
 	 		<p>&#40;Tor Browser&#41; Set dom.webaudio.enabled to true / dom.webaudio.enabledをtrueに設定する</p>
-			<details style="color: #86b300;">
-				<summary>Other options / その他のオプション</summary>
+			<details style="color: #87CEEB;">
+				<summary>Other options / 其他选择 </summary>
 				<a href="/flush">
 					<button class="button-small">
 						<span class="button-label-small">Clear preferences and cache</span>
@@ -243,12 +243,12 @@
 		}
 
 		.button-big {
-			background: linear-gradient(90deg, rgb(134, 179, 0), rgb(74, 179, 0));
+			background: linear-gradient(90deg, rgb(135,206,235), rgb(74, 179, 0));
 			line-height: 50px;
 		}
 
 		.button-big:hover {
-			background: rgb(153, 204, 0);
+			background: rgb(135,206,235);
 		}
 
 		.button-small {
@@ -268,13 +268,13 @@
 		}
 
 		.button-label-small {
-			color: rgb(153, 204, 0);
+			color: rgb(135,206,235);
 			font-size: 16px;
 			padding: 12px;
 		}
 
 		a {
-			color: rgb(134, 179, 0);
+			color: rgb(135,206,235);
 			text-decoration: none;
 		}
 
