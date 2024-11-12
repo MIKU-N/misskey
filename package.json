@@ -1,14 +1,10 @@
 {
 	"name": "misskey",
-<<<<<<< HEAD
-	"version": "2024.9.0-alpha.1-neko",
-=======
-	"version": "2024.11.0-alpha.0",
->>>>>>> develop
+	"version": "2024.11.0-alpha.0-neko",
 	"codename": "nasubi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MIKU-N/misskey.git"
+		"url": "https://github.com/misskey-dev/misskey.git"
 	},
 	"packageManager": "pnpm@9.6.0",
 	"workspaces": [
