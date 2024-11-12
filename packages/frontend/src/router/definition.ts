@@ -10,7 +10,7 @@ import { $i, iAmModerator } from '@/account.js';
 import MkLoading from '@/pages/_loading_.vue';
 import MkError from '@/pages/_error_.vue';
 
-export const page = (loader: AsyncComponentLoader<any>) => defineAsyncComponent({
+export const page = (loader: AsyncComponentLoader) => defineAsyncComponent({
 	loader: loader,
 	loadingComponent: MkLoading,
 	errorComponent: MkError,
@@ -217,7 +217,7 @@ const routes: RouteDef[] = [{
 	component: page(() => import('@/pages/theme-editor.vue')),
 	loginRequired: true,
 }, {
-	path: '/roles/:role',
+	path: '/roles/:roleId',
 	component: page(() => import('@/pages/role.vue')),
 }, {
 	path: '/user-tags/:tag',
@@ -463,21 +463,13 @@ const routes: RouteDef[] = [{
 		name: 'relays',
 		component: page(() => import('@/pages/admin/relays.vue')),
 	}, {
-		path: '/instance-block',
-		name: 'instance-block',
-		component: page(() => import('@/pages/admin/instance-block.vue')),
-	}, {
-		path: '/proxy-account',
-		name: 'proxy-account',
-		component: page(() => import('@/pages/admin/proxy-account.vue')),
-	}, {
 		path: '/external-services',
 		name: 'external-services',
 		component: page(() => import('@/pages/admin/external-services.vue')),
 	}, {
-		path: '/other-settings',
-		name: 'other-settings',
-		component: page(() => import('@/pages/admin/other-settings.vue')),
+		path: '/performance',
+		name: 'performance',
+		component: page(() => import('@/pages/admin/performance.vue')),
 	}, {
 		path: '/server-rules',
 		name: 'server-rules',

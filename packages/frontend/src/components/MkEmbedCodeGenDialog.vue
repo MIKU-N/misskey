@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 	:scroll="false"
 	:withOkButton="false"
 	@close="cancel()"
-	@closed="$emit('closed')"
+	@closed="emit('closed')"
 >
 	<template #header><i class="ti ti-code"></i> {{ i18n.ts._embedCodeGen.title }}</template>
 
@@ -90,6 +90,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script setup lang="ts">
 import { shallowRef, ref, computed, nextTick, onMounted, onDeactivated, onUnmounted } from 'vue';
+import { url } from '@@/js/config.js';
+import { embedRouteWithScrollbar } from '@@/js/embed-page.js';
 import type { EmbeddableEntity, EmbedParams } from '@@/js/embed-page.js';
 import MkModalWindow from '@/components/MkModalWindow.vue';
 
@@ -103,10 +105,8 @@ import MkInfo from '@/components/MkInfo.vue';
 
 import * as os from '@/os.js';
 import { i18n } from '@/i18n.js';
-import { url } from '@@/js/config.js';
 import { copyToClipboard } from '@/scripts/copy-to-clipboard.js';
 import { normalizeEmbedParams, getEmbedCode } from '@/scripts/get-embed-code.js';
-import { embedRouteWithScrollbar } from '@@/js/embed-page.js';
 
 const emit = defineEmits<{
 	(ev: 'ok'): void;
@@ -306,7 +306,9 @@ onUnmounted(() => {
 
 .embedCodeGenPreviewRoot {
 	position: relative;
-	background-color: var(--bg);
+	background-color: var(--MI_THEME-bg);
+	background-size: auto auto;
+	background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, var(--MI_THEME-panel) 6px, var(--MI_THEME-panel) 12px);
 	cursor: not-allowed;
 }
 
@@ -379,8 +381,8 @@ onUnmounted(() => {
 
 .embedCodeGenResultHeadingIcon {
 	margin: 0 auto;
-	background-color: var(--accentedBg);
-	color: var(--accent);
+	background-color: var(--MI_THEME-accentedBg);
+	color: var(--MI_THEME-accent);
 	text-align: center;
 	height: 64px;
 	width: 64px;

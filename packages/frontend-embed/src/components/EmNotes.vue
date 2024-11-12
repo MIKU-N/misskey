@@ -20,12 +20,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-import { shallowRef } from 'vue';
+import { useTemplateRef } from 'vue';
 import EmNote from '@/components/EmNote.vue';
 import EmPagination, { Paging } from '@/components/EmPagination.vue';
 import { i18n } from '@/i18n.js';
 
-const props = withDefaults(defineProps<{
+withDefaults(defineProps<{
 	pagination: Paging;
 	noGap?: boolean;
 	disableAutoLoad?: boolean;
@@ -34,7 +34,7 @@ const props = withDefaults(defineProps<{
 	ad: true,
 });
 
-const pagingComponent = shallowRef<InstanceType<typeof EmPagination>>();
+const pagingComponent = useTemplateRef('pagingComponent');
 
 defineExpose({
 	pagingComponent,
@@ -43,10 +43,10 @@ defineExpose({
 
 <style lang="scss" module>
 .root {
-	background: var(--panel);
+	background: var(--MI_THEME-panel);
 }
 
 .note {
-	border-bottom: 0.5px solid var(--divider);
+	border-bottom: 0.5px solid var(--MI_THEME-divider);
 }
 </style>
