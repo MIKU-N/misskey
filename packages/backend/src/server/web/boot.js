@@ -185,7 +185,7 @@
 			<p>${messages.solution2}</p>
 			<p>${messages.solution3}</p>
 			<p>${messages.solution4}</p>
-			<details style="color: #86b300;">
+			<details style="color: #87CEEB;">
 				<summary>${messages.otherOption}</summary>
 				<a href="${safeModeUrl}">
 					<button class="button-small">
@@ -254,12 +254,12 @@
 		}
 
 		.button-big {
-			background: linear-gradient(90deg, rgb(134, 179, 0), rgb(74, 179, 0));
+			background: linear-gradient(90deg, rgb(135,206,235), rgb(74, 179, 0));
 			line-height: 50px;
 		}
 
 		.button-big:hover {
-			background: rgb(153, 204, 0);
+			background: rgb(135,206,235);
 		}
 
 		.button-small {
@@ -279,13 +279,13 @@
 		}
 
 		.button-label-small {
-			color: rgb(153, 204, 0);
+			color: rgb(135,206,235);
 			font-size: 16px;
 			padding: 12px;
 		}
 
 		a {
-			color: rgb(134, 179, 0);
+			color: rgb(135,206,235);
 			text-decoration: none;
 		}
 

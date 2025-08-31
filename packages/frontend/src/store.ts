@@ -208,7 +208,7 @@ export const store = markRaw(new Pizzax('base', {
 	},
 	serverDisconnectedBehavior: {
 		where: 'device',
-		default: 'quiet' as 'quiet' | 'reload' | 'dialog',
+		default: null as null | 'quiet' | 'reload' | 'dialog',
 	},
 	nsfw: {
 		where: 'device',
