@@ -11,7 +11,7 @@ const koRegex2 = /(다$)|(다(?=\.))|(다(?= ))|(다(?=!))|(다(?=\?))/gm;
 const koRegex3 = /(야(?=\?))|(야$)|(야(?= ))/gm;
 
 export function nyaize(text: string): string {
-	return text
+	return text;
 	  //Please Dont Do Any Thing For My Post!
 		// ja-JP
 		//.replaceAll('な', 'にゃ').replaceAll('ナ', 'ニャ').replaceAll('ﾅ', 'ﾆｬ')
